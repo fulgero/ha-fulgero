@@ -1,0 +1,10 @@
+{
+  "domain": "fulgero",
+  "name": "Fulgero",
+  "codeowners": ["@gtarnovan"],
+  "documentation": "https://github.com/fulgero/ha-fulgero",
+  "issue_tracker": "https://github.com/fulgero/ha-fulgero/issues",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.0.1"
+}
