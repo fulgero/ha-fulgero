@@ -1,0 +1,42 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Cont Fulgero",
+        "description": "Obține gratuit o cheie API pe site-ul Fulgero (fulgero.ro) — verificare pe email; cheia se afișează o singură dată.",
+        "data": {
+          "base_url": "URL-ul API-ului",
+          "api_key": "Cheia API"
+        }
+      },
+      "target": {
+        "title": "Loc de consum",
+        "description": "Zona de distribuție (vezi factura), oferta furnizorului și nivelul de tensiune (casnic: JT).",
+        "data": {
+          "zone": "Zona de distribuție",
+          "formula": "Oferta / formula furnizorului",
+          "voltage": "Nivel de tensiune",
+          "vat": "TVA"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "API-ul Fulgero nu a putut fi contactat — verifică URL-ul și rețeaua.",
+      "invalid_auth": "Cheia a fost respinsă de API (revocată sau greșită?).",
+      "empty_catalog": "Cheia este validă, dar API-ul nu a returnat nicio ofertă — reîncearcă mai târziu."
+    },
+    "abort": {
+      "already_configured": "Această combinație zonă/ofertă/tensiune este deja configurată."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current_price": {
+        "name": "Preț curent"
+      },
+      "next_hour_price": {
+        "name": "Preț ora următoare"
+      }
+    }
+  }
+}

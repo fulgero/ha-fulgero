@@ -1,4 +1,6 @@
 {
-  "name": "Fulgero",
-  "render_readme": true
+  "name": "Fulgero — Romanian electricity prices",
+  "render_readme": true,
+  "content_in_root": false,
+  "homeassistant": "2024.12.0"
 }

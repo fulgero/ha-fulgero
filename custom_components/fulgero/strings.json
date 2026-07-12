@@ -1,0 +1,42 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Fulgero account",
+        "description": "Get a free API key on the Fulgero site (fulgero.ro) — email verification; the key is shown once.",
+        "data": {
+          "base_url": "API base URL",
+          "api_key": "API key"
+        }
+      },
+      "target": {
+        "title": "Connection point",
+        "description": "Your distribution zone (see your invoice), supplier offer, and voltage level (households: JT).",
+        "data": {
+          "zone": "Distribution zone",
+          "formula": "Supplier offer / formula",
+          "voltage": "Voltage level",
+          "vat": "VAT"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Could not reach the Fulgero API — check the base URL and your network.",
+      "invalid_auth": "The API rejected the key (revoked or mistyped?).",
+      "empty_catalog": "The key is valid but the API returned no offers — try again later."
+    },
+    "abort": {
+      "already_configured": "This zone/offer/voltage combination is already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "current_price": {
+        "name": "Current price"
+      },
+      "next_hour_price": {
+        "name": "Next hour price"
+      }
+    }
+  }
+}
